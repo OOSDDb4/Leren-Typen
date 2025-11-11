@@ -16,14 +16,14 @@ Daarnaast bevat de app speciale oefeningen die gericht zijn op het verbeteren va
 - **Versiebeheer**: Git en GitHub
 
 ## Team
-**Project**: TypeFout
-**Teamlieder**: Onne Krol
-**Teamleden**: - Alina Koroleva
+- **Project**: TypeFout
+- **Teamlieder**: Onne Krol
+- **Teamleden**: - Alina Koroleva
                - Jeroen Maassen Van Den Brink
                - Fedde Talma
                - Elan Zandt
                - Ius de Visser
-**Opdrachtgever**: HBO-ICT docenten (Windesheim University of Applied Sciences)
+- **Opdrachtgever**: HBO-ICT docenten (Windesheim University of Applied Sciences)
 
 
 ---
