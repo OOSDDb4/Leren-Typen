@@ -36,8 +36,20 @@ We gebruiken de Gitflow branching strategie voor dit project.
 
 ---
 ## Code conventies
-We hanteren de volgende code conventies om de leesbaarheid en onderhoudbaarheid van onze code te waarborgen:
-- **C# Coding Standards**: We volgen de officiële C# coding standards zoals beschreven door Microsoft.
-- **Naming Conventions**: We gebruiken duidelijke en beschrijvende namen voor variabelen, methoden en klassen.
-- **Commentaar**: We schrijven duidelijke commentaren bij complexe codeblokken om de functionaliteit uit te leggen.
-- **Code Reviews**: Alle code wordt gereviewd door ten minste één teamlid voordat deze wordt gemerged naar de develop branch.
+
+- Naamgeving van variabele, functies/methods en klasses moeten beschrijvend zijn. Zo moet er geen x of y staan maar addProduct of removeProduct.  
+- Geef alles een type en gebruik niet var.  
+- Namen van Classes, Methodes, Enumerations, Public fields, Public Properties en Namespaces gebruiken PascalCase.  
+- Namen van locale variables gebruiken camelCase.  
+- Namen van private, protected, internal en protected Internal fields en properties gebruiken _camelCase.  
+- Namen van een interface beginnen met een I bijvoorbeeld: IInterface.  
+- Alle classes en interfaces hebben hun eigen bestand.  
+- De bestandsnaam moet exact overeenkomen met de class of interface binnen dat bestand.  
+- Houd een vaste volgorde aan in klassen:  
+  1. Fields  
+  2. Properties  
+  3. Constructors  
+  4. Public Methods  
+  5. Private Methods  
+  6. Events  
+- Sorteer en groepeer using statements: Eerst system namespaces, daarna project namespaces.
