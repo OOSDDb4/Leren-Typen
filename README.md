@@ -17,7 +17,7 @@ Daarnaast bevat de app speciale oefeningen die gericht zijn op het verbeteren va
 
 ## Team
 **Project**: TypeFout
-**Teamlieder**: Onne Krol
+**Teamleider**: Onne Krol
 **Teamleden**: - Alina Koroleva
                - Jeroen Maassen Van Den Brink
                - Fedde Talma
@@ -39,7 +39,7 @@ De code die op de `main` branch staat is stabiele, geaccepteerde en geteste code
 
 ### **Staging (A)**
 De code die op de `staging` branch staat is code die klaar is om getest te worden.  
-Er is gekozen om met een losse `staging` branch te werken, zodat er ondertussen op `develop` verder gewerkt kan worden zonder de acceptatietesten te beïnvloeden.
+Er is gekozen om met een losse `staging` branch te werken, zodat er ondertussen op `develop` verder gewerkt kan worden zonder de acceptatietesten te beÃ¯nvloeden.
 
 #### Merge voorwaarden
 - De code moet getest zijn op de `develop` branch.  
