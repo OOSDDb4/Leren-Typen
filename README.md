@@ -24,3 +24,20 @@ Daarnaast bevat de app speciale oefeningen die gericht zijn op het verbeteren va
                - Elan Zandt
                - Ius de Visser
 **Opdrachtgever**: HBO-ICT docenten (Windesheim University of Applied Sciences)
+
+
+---
+## Branching strategie
+We gebruiken de Gitflow branching strategie voor dit project.
+- **Main branch**: Bevat de stabiele versie van de code die klaar is voor productie.
+- **Develop branch**: Bevat de nieuwste ontwikkelingsversies van de code. Nieuwe features en bugfixes worden hier eerst geïntegreerd.
+- **Staging branches**: Wordt gebruikt als testomgeving tussen de ontwikkel- en productiebranch, waar nieuwe functies eerst worden gecontroleerd voordat ze live gaan.
+- **Hotfix branches**: Voor kritieke bugfixes die direct in productie moeten worden opgelost, wordt een hotfix branch gemaakt vanaf de main branch. Na voltooiing wordt deze gemerged terug naar zowel main als develop.
+
+---
+## Code conventies
+We hanteren de volgende code conventies om de leesbaarheid en onderhoudbaarheid van onze code te waarborgen:
+- **C# Coding Standards**: We volgen de officiële C# coding standards zoals beschreven door Microsoft.
+- **Naming Conventions**: We gebruiken duidelijke en beschrijvende namen voor variabelen, methoden en klassen.
+- **Commentaar**: We schrijven duidelijke commentaren bij complexe codeblokken om de functionaliteit uit te leggen.
+- **Code Reviews**: Alle code wordt gereviewd door ten minste één teamlid voordat deze wordt gemerged naar de develop branch.
