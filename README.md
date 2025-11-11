@@ -28,11 +28,46 @@ Daarnaast bevat de app speciale oefeningen die gericht zijn op het verbeteren va
 
 ---
 ## Branching strategie
-We gebruiken de Gitflow branching strategie voor dit project.
-- **Main branch**: Bevat de stabiele versie van de code die klaar is voor productie.
-- **Develop branch**: Bevat de nieuwste ontwikkelingsversies van de code. Nieuwe features en bugfixes worden hier eerst geïntegreerd.
-- **Staging branches**: Wordt gebruikt als testomgeving tussen de ontwikkel- en productiebranch, waar nieuwe functies eerst worden gecontroleerd voordat ze live gaan.
-- **Hotfix branches**: Voor kritieke bugfixes die direct in productie moeten worden opgelost, wordt een hotfix branch gemaakt vanaf de main branch. Na voltooiing wordt deze gemerged terug naar zowel main als develop.
+### **Main (P)**
+De code die op de `main` branch staat is stabiele, geaccepteerde en geteste code die door de Product Owner is goedgekeurd.
+
+#### Merge voorwaarden
+- De code moet getest zijn op de `staging` branch.  
+- De code moet geaccepteerd zijn door de Product Owner (John Brouwers).  
+- De code mag alleen door de Team Lead () gemerged worden.  
+
+
+### **Staging (A)**
+De code die op de `staging` branch staat is code die klaar is om getest te worden.  
+Er is gekozen om met een losse `staging` branch te werken, zodat er ondertussen op `develop` verder gewerkt kan worden zonder de acceptatietesten te beïnvloeden.
+
+#### Merge voorwaarden
+- De code moet getest zijn op de `develop` branch.  
+- De code moet geaccepteerd zijn door de Team Lead ().  
+- De code mag alleen door de Team Lead () gemerged worden.  
+
+
+### **Develop (T)**
+De code die op de `develop` branch staat is code die klaar is om getest te worden.  
+Op de `develop` branch wordt gewerkt aan nieuwe features en bugfixes (in de vorm van feature branches).  
+Er wordt gewerkt met een `develop` branch om te zorgen dat alle losse feature branches goed gemerged kunnen worden.
+
+#### Merge voorwaarden
+- De code moet lokaal getest zijn.  
+- De code moet minstens door een ander teamlid gereviewed en goedgekeurd zijn.  
+- De code moet voldoen aan de code conventies.  
+
+
+### **Feature/naam_van_feature (O)**
+Een `feature/` branch wordt gebruikt wanneer er aan een nieuwe feature wordt gewerkt.  
+`Feature/` branches worden altijd aangemaakt vanuit de `develop` branch.  
+De naam van de feature branch moet omschrijvend zijn.  
+Werk volgens de afgesproken code conventies.  
+
+
+### **Hotfix/naam_van_bugfix (O)**
+Een `hotfix/` branch wordt gebruikt wanneer een bug wordt opgelost.  
+De naam van de hotfix branch moet omschrijvend zijn.  
 
 ---
 ## Code conventies
