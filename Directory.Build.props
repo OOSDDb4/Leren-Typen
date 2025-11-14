@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup Condition="'$(CI)' == 'true'">
+    <!-- Disable MAUI so workloads (iOS/MacCatalyst) are not required -->
+    <UseMaui>false</UseMaui>
+
+    <!-- Force single framework -->
+    <TargetFrameworks>net8.0</TargetFrameworks>
+
+    <!-- Avoid MAUI item injection -->
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+</Project>
