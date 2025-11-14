@@ -16,9 +16,6 @@ jobs:
   code-quality:
     runs-on: windows-latest
 
-    env:
-      CI: true   # For GitHub steps AND MSBuild when exported below
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,10 +26,11 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Export CI flag for MSBuild
-        run: echo "CI=true" >> $GITHUB_ENV
+        shell: cmd
+        run: echo CI=true >> %GITHUB_ENV%
 
       - name: Restore
-        run: dotnet restore
+        run: dotnet restore Typefout.sln
 
       - name: Run naming/style/code-convention checks
         run: dotnet format --verify-no-changes --severity error
