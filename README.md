@@ -6,10 +6,10 @@ Daarnaast bevat de app speciale oefeningen die gericht zijn op het verbeteren va
 ---
 ## Functionaliteiten
 - **Typesnelheid meten**: De app meet hoe snel je typt en geeft je een score op basis van je prestaties.
-- **Persoonlijke feedback**: Na elke oefening ontvang je feedback over je typevaardigheden en tips om te verbeteren.\
+- **Persoonlijke feedback**: Na elke oefening ontvang je feedback over je typevaardigheden en tips om te verbeteren.
 - **Resultaten opslaan**: Je voortgang wordt opgeslagen, zodat je kunt zien hoe je verbetert over tijd.
 
-## Tehcnische stack
+## Technische stack
 - **Frontend**: .NET MAUI (C#)  
 - **Backend**: ASP.NET Core Web API (C#) 
 - **Database**: SQLite
