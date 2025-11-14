@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      CI: true  # Enable CI mode = ignore MAUI workloads
+      CI: true   # For GitHub steps AND MSBuild when exported below
 
     steps:
       - name: Checkout code
@@ -27,6 +27,9 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
+
+      - name: Export CI flag for MSBuild
+        run: echo "CI=true" >> $GITHUB_ENV
 
       - name: Restore
         run: dotnet restore
