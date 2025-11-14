@@ -16,6 +16,9 @@ jobs:
   code-quality:
     runs-on: windows-latest
 
+    env:
+      CI: true  # Enable CI mode = ignore MAUI workloads
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
